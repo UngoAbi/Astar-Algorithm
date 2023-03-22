@@ -59,7 +59,11 @@ class Grid:
 
     def get_neighbors(self, node: Node) -> Generator[Node]:
         x, y = node.position
-        off_sets = ((-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1))
+        if CAN_GO_DIAGONAL:
+            off_sets = ((-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1))
+        else:
+            off_sets = ((0, -1), (-1, 0), (1, 0), (0, 1))
+
         for new_x, new_y in off_sets:
             new_x += x
             new_y += y
