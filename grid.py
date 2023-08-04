@@ -12,13 +12,13 @@ class GridState(Enum):
 
 
 class NodeType(Enum):
-    DEFAULT = pygame.transform.scale(pygame.image.load("../assets/graphics/default.png"), (NODE_SIZE, NODE_SIZE))
-    WALL = pygame.transform.scale(pygame.image.load("../assets/graphics/wall.png"), (NODE_SIZE, NODE_SIZE))
-    START = pygame.transform.scale(pygame.image.load("../assets/graphics/start.png"), (NODE_SIZE, NODE_SIZE))
-    TARGET = pygame.transform.scale(pygame.image.load("../assets/graphics/target.png"), (NODE_SIZE, NODE_SIZE))
-    OPEN = pygame.transform.scale(pygame.image.load("../assets/graphics/open.png"), (NODE_SIZE, NODE_SIZE))
-    CLOSED = pygame.transform.scale(pygame.image.load("../assets/graphics/closed.png"), (NODE_SIZE, NODE_SIZE))
-    PATH = pygame.transform.scale(pygame.image.load("../assets/graphics/path.png"), (NODE_SIZE, NODE_SIZE))
+    DEFAULT = pygame.transform.scale(pygame.image.load("assets/default.png"), (NODE_SIZE, NODE_SIZE))
+    WALL = pygame.transform.scale(pygame.image.load("assets/wall.png"), (NODE_SIZE, NODE_SIZE))
+    START = pygame.transform.scale(pygame.image.load("assets/start.png"), (NODE_SIZE, NODE_SIZE))
+    TARGET = pygame.transform.scale(pygame.image.load("assets/target.png"), (NODE_SIZE, NODE_SIZE))
+    OPEN = pygame.transform.scale(pygame.image.load("assets/open.png"), (NODE_SIZE, NODE_SIZE))
+    CLOSED = pygame.transform.scale(pygame.image.load("assets/closed.png"), (NODE_SIZE, NODE_SIZE))
+    PATH = pygame.transform.scale(pygame.image.load("assets/path.png"), (NODE_SIZE, NODE_SIZE))
 
 
 class Node:

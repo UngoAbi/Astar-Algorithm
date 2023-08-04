@@ -88,7 +88,6 @@ def draw_grid(grid: Grid) -> None:
             screen.blit(node.type.value, (x * NODE_SIZE, y * NODE_SIZE))
 
 
-
 def draw_toolbar(toolbar: ToolBar) -> None:
     for tool in toolbar.tools:
         screen.blit(tool.type.value, tool.position)
